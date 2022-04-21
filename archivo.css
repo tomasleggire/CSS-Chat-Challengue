@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: hsl(270, 20%, 96%);
+    font-family: 'Rubik', sans-serif;
+}
+
+.box-fondo {
+    min-width: 40%;
+    height: 80%;
+    background: linear-gradient(to right top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    position: absolute;
+    border-bottom-left-radius: 450px;
+    border-bottom-right-radius: 450px;
+    left: -190px;
+    z-index: -1;
+}
+
+.box-fondo2 {
+    min-width: 40%;
+    height: 80%;
+    background-color: rgb(236, 236, 236);
+    position: absolute;
+    border-top-left-radius: 450px;
+    border-top-right-radius: 450px;
+    right: 0;
+    margin-right: -190px;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+@media only screen and (max-width:375px) {
+    .box-fondo {
+        min-width: 100%;
+        height: 60%;
+    }
+    .box-fondo2 {
+        min-width: 100%;
+        height: 60%;
+    }
+}
+
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media only screen and (max-width:375px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+.box-1 {
+    min-height: 600px;
+    min-width: 320px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 50px;
+    border: solid 15px rgb(255, 255, 255);
+    border-radius: 35px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11);   
+}
+@media only screen and (max-width:375px) {
+    .box-1 {
+        margin-right: 0;
+        margin-top: 40px;
+    }
+}
+
+
+.box-header {
+    background: linear-gradient(to right , hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-width: 100%;
+    min-height: auto;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    display: flex;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.header-fondo {
+    width: 170px;
+    height: 23px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 64px;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#img-avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: solid 3px rgb(255, 255, 255);
+}
+
+i {
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+.header-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    line-height: 21px;
+
+}
+
+#header-h1 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+#header-p {
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+.header-3 {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+    padding-right: 20px;
+    
+}
+
+
+.chat {
+    min-width: 100%;
+    min-height: 490px;
+    background-color: hsl(270, 20%, 96%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.chat-p {
+    font-size: 10px;
+    color: hsl(276, 55%, 52%);
+    max-width: 150px;
+    background-color: hsl(287, 43%, 92%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 2px;
+    line-height: 15px;
+}
+
+#dog {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.chat-images {
+    align-self: flex-end;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.chat-p-right {
+    font-size: 10px;
+    color: hsl(271, 15%, 43%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    max-width: 160px;
+    border-bottom-right-radius: 2px;
+    -webkit-box-shadow: 5px 0px 15px 5px rgba(0,0,0,0.05); 
+box-shadow: 5px 0px 15px 5px rgba(0,0,0,0.05);
+line-height: 15px;
+}
+
+
+.chat-3, .chat-4 {
+    align-self: flex-end;
+    margin-right: 10px;
+    line-height: 15px;
+}
+
+#chat5 {
+    max-width: 156px;
+}
+
+.radio-chat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 215px;
+    padding: 11px 11px;
+    border-radius: 10px;
+    border-bottom-left-radius: 2px;
+    background: linear-gradient(to right , hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+.radio-p {
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.precio-p {
+    padding-left: 40px;
+}
+
+.precio-p2 {
+    padding-left: 57px;
+}
+
+.sumbit-box {
+    align-self: center;
+    justify-self: center;
+}
+
+#send {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 95px;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    margin-left: -17px;
+}
+
+::placeholder { color: hsl(274, 5%, 75%);}
+
+button {
+    margin-left: -40px;
+    background-color: hsl(271, 36%, 24%);
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+#sumbit {
+    font-size: 15px;
+    text-align: center;
+    padding: 8px 13px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-2 {
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 100px;
+    margin-top: -40px;
+}
+
+.box2-h1 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: hsl(271, 36%, 24%);
+}
+
+.p-box2 {
+    line-height: 25px;
+    font-size: 16px;
+    color: rgb(128, 128, 128);
+}
+
+@media only screen and (max-width:375px) {
+    .box-2 {
+        margin-left: 0;
+        padding: 0 31px;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+    .box2-p {
+        max-width: 300px;
+    }
+    .p-box2 {
+        line-height: 30px;
+    }
+}
